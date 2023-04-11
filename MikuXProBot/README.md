@@ -25,3 +25,5 @@ from MikuXProBot.modules.sql import SESSION
 ```python3
 from MikuXProBot import REDIS
 ```
+## Deploy
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/VBarusu/Miku-Nakano)
