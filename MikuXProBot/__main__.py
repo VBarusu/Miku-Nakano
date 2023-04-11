@@ -82,7 +82,7 @@ buttons = [
     [
                         InlineKeyboardButton(
                              text="🎗️ Summon Me",
-                             url="https://t.me/MikuXProBot?startgroup=true"),
+                             url="https://t.me/ayakachanrobot?startgroup=true"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -99,15 +99,15 @@ ABOUT1 = """
 """
 
 ABOUT2 = """
-*‣ Miku support chats*\nJoin My Support Group/Channel for see for report a problem on Miku.
+*‣ Ayaka support chats*\nJoin My Support Group/Channel for see for report a problem on Ayaka.
 """
 
 REPO_TXT = """
 *‣ Dev:*
-• [нσ∂αкα°δ](t.me/h0daka)
+• [Genjuriki](t.me/Genjuriki)
 \n*‣ Note:* 
 • If You're Going To Fork This Repo Then Don't Forget To Give a Star 🌟
-• Report Any Bugs On Source Code At [Support](t.me/Mikuxsupport)
+• Report Any Bugs On Source Code At [Support](t.me/ayakachansupport)
 """
 
 ABOUT3 = """Hello [{}](tg://user?id={}), My name is *{}*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
@@ -121,7 +121,7 @@ ABOUT3 = """Hello [{}](tg://user?id={}), My name is *{}*. A Powerful Telegram Gr
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}](tg://user?id={}) your *Miku* is here! 
+Hey [{}](tg://user?id={}) your *Ayaka* is here! 
 I Help Admins To Manage Their Groups! 
 Main commands available :
  ‣ /help: PM's you this message.
@@ -134,11 +134,8 @@ For all command use / or !
 """
 
 MIKU_IMG = (
-      "https://telegra.ph/file/624831b44a6e36370ec70.jpg",
-      "https://telegra.ph/file/b9c7fb4d2dc481104fe49.jpg",
-      "https://telegra.ph/file/02fd7a43fbce78c21c3dd.jpg",
-      "https://telegra.ph/file/2c662cf6276379eaf10db.jpg",
-      "https://telegra.ph/file/7bce7f2e2aedc3f048737.jpg",
+      "https://telegra.ph/file/c6a5e84340121a146dcbc.jpg",
+      "https://telegra.ph/file/55d735f3ba8c0dd7e868b.jpg",
 )
 
 TEXXT = (
@@ -150,21 +147,16 @@ TEXXT = (
 )
 
 MIKU_N_IMG = (
-      "https://telegra.ph/file/837c61d9c51236fea4100.jpg",
-      "https://telegra.ph/file/ee34cf0d7e4782424b777.jpg",
-      "https://telegra.ph/file/5410b02359a2cabc2776b.jpg",
-      "https://telegra.ph/file/b1fc3b2af759999bf3b35.jpg",
-      "https://telegra.ph/file/305b5b3c4527cd439b926.jpg"
+      "https://telegra.ph/file/4769b1281a5460ff2f461.jpg",
+      "https://telegra.ph/file/47905ac28f7559b26d48e.jpg",
 
 )
 
 PM_PHOTO = (
-      "https://telegra.ph/file/3f06de01df5bc3c3cf343.jpg",
-      "https://telegra.ph//file/88976abda0d0af9d4a517.jpg",
-      "https://telegra.ph//file/b388f473ddfb9cc727bb1.jpg",
+      "https://telegra.ph/file/c6a5e84340121a146dcbc.jpg",
 )
 
-MIKU_DISPACHER_PIC = "https://telegra.ph/file/b1abf69ab7ab4352c71a4.jpg"
+MIKU_DISPACHER_PIC = "https://telegra.ph/file/c6a5e84340121a146dcbc.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me """
 
@@ -318,10 +310,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url="t.me/Mikuxsupport"),
+                             url="t.me/ayakachansupport"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="t.me/MikuXUpdates")
+                             url="t.me/ayakachanupdate")
                      ] 
                 ]
             ),
@@ -388,7 +380,7 @@ def help_button(update, context):
             help_buttons.append(
                 [
                     InlineKeyboardButton(text="Back", callback_data="help_back"),
-                    InlineKeyboardButton(text='Support', url='https://t.me/Mikuxsupport')
+                    InlineKeyboardButton(text='Support', url='https://t.me/ayakachansupport')
                 ]
                     )
             query.message.edit_caption(
@@ -454,8 +446,8 @@ def about_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📢 support", url="t.me/MikuxSupport"),
-                    InlineKeyboardButton(text="🎏 updates", url="t.me/MikuXUpdates"),
+                    InlineKeyboardButton(text="📢 support", url="t.me/ayakachansupport"),
+                    InlineKeyboardButton(text="🎏 updates", url="t.me/ayakachanupdate"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="miku_")
@@ -476,8 +468,8 @@ def repo_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🧾 Source Code", url="https://github.com/h0daka/Miku-Nakano"),
-                    InlineKeyboardButton(text="📢 support", url="t.me/MikuxSupport"),
+                    InlineKeyboardButton(text="🧾 Source Code", url="https://github.com/VBarusu/Miku-Nakano"),
+                    InlineKeyboardButton(text="📢 support", url="t.me/ayakachansupport"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="miku_")
@@ -568,7 +560,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/MikuXProBot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/ayakachanrobot?start=help")
                   ]
                 ]
             ),
@@ -820,7 +812,7 @@ def main():
         ) 
         except Unauthorized:
             LOGGER.warning(
-                "Miku can't able to send message to support_chat, go and check!")
+                "Ayaka can't able to send message to support_chat, go and check!")
         except BadRequest as e:
             LOGGER.warning(e.message)
 
@@ -867,7 +859,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Finally Miku Is In Online")
+        LOGGER.info("Finally Ayaka Is In Online")
         allowed_updates = ['message', 'edited_message', 'callback_query', 'callback_query', 'my_chat_member',
                            'chat_member', 'chat_join_request', 'channel_post', 'edited_channel_post', 'inline_query']
         updater.start_polling(
